@@ -2,8 +2,10 @@ package rocks.zipcodewilmington;
 
 import org.junit.Test;
 import rocks.zipcodewilmington.animals.Cat;
+import rocks.zipcodewilmington.animals.Dog;
 import rocks.zipcodewilmington.animals.animal_creation.AnimalFactory;
 import rocks.zipcodewilmington.animals.animal_storage.CatHouse;
+import rocks.zipcodewilmington.animals.animal_storage.DogHouse;
 
 import java.util.Date;
 
@@ -23,6 +25,17 @@ public class CatHouseTest {
         System.out.println(cat.getName());
     }
     // TODO - Create tests for `void remove(Integer id)`
+    @Test
+    public void removeTest(){
+        String name = "Garfield";
+        Date birthDate = new Date();
+        Cat cat = AnimalFactory.createCat(name, birthDate);
+        CatHouse.clear();
+
+        CatHouse.add(cat);
+
+        CatHouse.remove(0);
+    }
     // TODO - Create tests for `void remove(Cat cat)`
     // TODO - Create tests for `Cat getCatById(Integer id)`
     // TODO - Create tests for `Integer getNumberOfCats()`
