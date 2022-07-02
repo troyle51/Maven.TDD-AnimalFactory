@@ -49,8 +49,8 @@ public class DogTest {
 
         dog.setBirthDate(dob);
 
-        Date birthDate = dog.getBirthDate();
-        Assert.assertEquals(birthDate, dob);
+        Date birthDateCheck = dog.getBirthDate();
+        Assert.assertEquals(birthDateCheck, dob);
 
     }
     // TODO - Create tests for `void eat(Food food)`
