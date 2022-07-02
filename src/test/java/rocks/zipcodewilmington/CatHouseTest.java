@@ -26,7 +26,7 @@ public class CatHouseTest {
     }
     // TODO - Create tests for `void remove(Integer id)`
     @Test
-    public void removeTest(){
+    public void removeIdTest(){
         String name = "Garfield";
         Date birthDate = new Date();
         Cat cat = AnimalFactory.createCat(name, birthDate);
@@ -37,6 +37,17 @@ public class CatHouseTest {
         CatHouse.remove(0);
     }
     // TODO - Create tests for `void remove(Cat cat)`
+    @Test
+    public void removeCatTest(){
+        String name = "Garfield";
+        Date birthDate = new Date();
+        Cat cat = AnimalFactory.createCat(name, birthDate);
+        CatHouse.clear();
+
+        CatHouse.add(cat);
+
+        CatHouse.remove(cat);
+    }
     // TODO - Create tests for `Cat getCatById(Integer id)`
     // TODO - Create tests for `Integer getNumberOfCats()`
     @Test

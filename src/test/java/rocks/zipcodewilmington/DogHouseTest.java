@@ -24,7 +24,7 @@ public class DogHouseTest {
     }
     // TODO - Create tests for `void remove(Integer id)`
     @Test
-    public void removeTest(){
+    public void removeIdTest(){
         String name = "Fido";
         Date birthDate = new Date();
         Dog dog = AnimalFactory.createDog(name, birthDate);
