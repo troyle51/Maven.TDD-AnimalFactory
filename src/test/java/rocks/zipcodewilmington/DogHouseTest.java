@@ -23,6 +23,17 @@ public class DogHouseTest {
         System.out.println(dog.getName());
     }
     // TODO - Create tests for `void remove(Integer id)`
+    @Test
+    public void removeTest(){
+        String name = "Fido";
+        Date birthDate = new Date();
+        Dog dog = AnimalFactory.createDog(name, birthDate);
+        DogHouse.clear();
+
+        DogHouse.add(dog);
+
+        DogHouse.remove(0);
+    }
     // TODO - Create tests for `void remove(Dog dog)`
     // TODO - Create tests for `Dog getDogById(Integer id)`
     // TODO - Create tests for `Integer getNumberOfDogs()`
