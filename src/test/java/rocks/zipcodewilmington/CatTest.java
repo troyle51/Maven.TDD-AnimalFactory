@@ -22,6 +22,15 @@ public class CatTest {
         Assert.assertEquals(catName, givenName);
     }
     // TODO - Create tests for `speak`
+    @Test
+    public void speakTest(){
+        Cat cat = new Cat(null,null,null);
+        String speak = "meow!";
+
+        cat.speak();
+
+        Assert.assertEquals(speak, cat.speak());
+    }
     // TODO - Create tests for `setBirthDate(Date birthDate)`
     // TODO - Create tests for `void eat(Food food)`
     // TODO - Create tests for `Integer getId()`

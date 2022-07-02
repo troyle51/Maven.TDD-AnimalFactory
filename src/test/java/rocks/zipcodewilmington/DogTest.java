@@ -39,7 +39,7 @@ public class DogTest {
         //when
         dog.speak();
         //then
-        Assert.assertEquals(speak,dog.speak());
+        Assert.assertEquals(speak, dog.speak());
     }
 //     TODO - Create tests for `setBirthDate(Date birthDate)`
     @Test
