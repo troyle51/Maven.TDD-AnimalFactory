@@ -4,7 +4,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import rocks.zipcodewilmington.animals.Animal;
 import rocks.zipcodewilmington.animals.Cat;
-import rocks.zipcodewilmington.animals.Dog;
 import rocks.zipcodewilmington.animals.Mammal;
 
 import java.util.Date;
@@ -46,6 +45,7 @@ public class CatTest {
         Assert.assertEquals(birthDateCheck, dob);
     }
     // TODO - Create tests for `void eat(Food food)`
+
     // TODO - Create tests for `Integer getId()`
     @Test
     public void getIdTest(){
