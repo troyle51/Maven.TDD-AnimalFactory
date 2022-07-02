@@ -47,6 +47,17 @@ public class DogHouseTest {
         DogHouse.remove(dog);
     }
     // TODO - Create tests for `Dog getDogById(Integer id)`
+    @Test
+    public void getDogById(){
+        String name = "Milo";
+        Date birthDate = new Date();
+        Dog dog = AnimalFactory.createDog(name, birthDate);
+        DogHouse.clear();
+
+        DogHouse.add(dog);
+
+        DogHouse.getDogById(0);
+    }
     // TODO - Create tests for `Integer getNumberOfDogs()`
 
     @Test
