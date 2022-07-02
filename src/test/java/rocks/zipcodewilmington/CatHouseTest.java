@@ -49,6 +49,17 @@ public class CatHouseTest {
         CatHouse.remove(cat);
     }
     // TODO - Create tests for `Cat getCatById(Integer id)`
+    @Test
+    public void getCatById(){
+        String name = "Garfield";
+        Date birthDate = new Date();
+        Cat cat = AnimalFactory.createCat(name, birthDate);
+        CatHouse.clear();
+
+        CatHouse.add(cat);
+
+        CatHouse.getCatById(0);
+    }
     // TODO - Create tests for `Integer getNumberOfCats()`
     @Test
     public void testGetNumberOfCats(){
