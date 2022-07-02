@@ -5,6 +5,7 @@ import org.junit.Test;
 import rocks.zipcodewilmington.animals.Animal;
 import rocks.zipcodewilmington.animals.Cat;
 import rocks.zipcodewilmington.animals.Dog;
+import rocks.zipcodewilmington.animals.Mammal;
 
 import java.util.Date;
 
@@ -58,7 +59,7 @@ public class CatTest {
     // TODO - Create test to check Animal inheritance; google search `java instanceof keyword`
     @Test
     public void testAnimalInheritance(){
-        Dog cat = new Dog(null,null,null);
+        Cat cat = new Cat(null,null,null);
 
         boolean isTrue = cat instanceof Animal;
 
@@ -66,7 +67,15 @@ public class CatTest {
         Assert.assertEquals(shouldBeTrue, isTrue);
     }
     // TODO - Create test to check Mammal inheritance; google search `java instanceof keyword`
+    @Test
+    public void testMammalInheritance(){
+        Cat cat = new Cat(null,null,null);
 
+        boolean isTrue = cat instanceof Mammal;
+
+        boolean shouldBeTrue = true;
+        Assert.assertEquals(shouldBeTrue, isTrue);
+    }
 
     @Test
     public void constructorTest() {
