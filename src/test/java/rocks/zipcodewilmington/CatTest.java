@@ -11,6 +11,16 @@ import java.util.Date;
  */
 public class CatTest {
     // TODO - Create tests for `void setName(String name)`
+    @Test
+    public void setNameTest(){
+        Cat cat = new Cat(null,null,null);
+        String givenName = "Garfield";
+
+        cat.setName(givenName);
+
+        String catName = cat.getName();
+        Assert.assertEquals(catName, givenName);
+    }
     // TODO - Create tests for `speak`
     // TODO - Create tests for `setBirthDate(Date birthDate)`
     // TODO - Create tests for `void eat(Food food)`
