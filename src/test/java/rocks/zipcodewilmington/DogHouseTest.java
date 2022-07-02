@@ -12,6 +12,16 @@ import java.util.Date;
  */
 public class DogHouseTest {
     // TODO - Create tests for `void add(Dog dog)`
+    @Test
+    public void addTest(){
+        String name = "Milo";
+        Date birthDate = new Date();
+        Dog dog = AnimalFactory.createDog(name, birthDate);
+        DogHouse.clear();
+
+        DogHouse.add(dog);
+        System.out.println(dog.getName());
+    }
     // TODO - Create tests for `void remove(Integer id)`
     // TODO - Create tests for `void remove(Dog dog)`
     // TODO - Create tests for `Dog getDogById(Integer id)`
