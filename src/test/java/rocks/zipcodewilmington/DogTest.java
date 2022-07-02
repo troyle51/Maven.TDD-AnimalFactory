@@ -72,8 +72,8 @@ public class DogTest {
 
         int id = 2;
 
-        int dogId = dog.getId();
-        Assert.assertEquals(dogId, id);
+        int dogIdCheck = dog.getId();
+        Assert.assertEquals(dogIdCheck, id);
     }
     // TODO - Create test to check Animal inheritance; google search `java instanceof keyword`
     @Test
