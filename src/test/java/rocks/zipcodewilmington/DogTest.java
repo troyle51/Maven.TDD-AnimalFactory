@@ -54,16 +54,20 @@ public class DogTest {
 
     }
     // TODO - Create tests for `void eat(Food food)`
-//    @Test
-//    public void eatFoodTest(){
-//        Dog dog = new Dog(null,null,null);
-//        String kibble = "kibbles";
-//
-//        dog.eat();
-//
-//        String foodAte = dog.eat();
-//        Assert.assertEquals(foodAte,kibble);
-//    }
+    @Test
+    public void eatFoodTest(){
+        Dog dog = new Dog(null,null,null);
+        Food food = new Food();
+        int eaten = 3;
+
+        dog.eat(food);
+        dog.eat(food);
+        dog.eat(food);
+
+        int foodAte = dog.getNumberOfMealsEaten();
+        Assert.assertEquals(foodAte, eaten);
+
+    }
 
     // TODO - Create tests for `Integer getId()`
     @Test
